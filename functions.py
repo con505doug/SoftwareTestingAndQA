@@ -1,30 +1,3 @@
-def validate(heightF, heightI, weight):
-    heightValid = False
-    weightValid = False
-    try: 
-        heightF = float(heightF) * 12
-        heightI = float(heightI)
-
-        if heightF >= 0 and heightI >= 0 and heightI < 12:
-            height = heightF + heightI
-            
-            if height > 0:
-                heightValid = True
-
-    except ValueError:
-        heightValid = False
-
-    try: 
-        weight = float(weight)
-        if weight > 0:
-            weightValid = True
-
-    except ValueError:
-        weightValid = False
-    
-    return heightValid, weightValid
-    
-
 def bmiCalculator(height, weight):
     height_metric = height * 0.025
     weight_metric = weight * 0.45
