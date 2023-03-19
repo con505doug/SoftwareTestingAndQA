@@ -1,7 +1,7 @@
 import pytest
 from functions import *
 
-@pytest.mark.parametrize('case, height, weight', [(1, 0, 150), (2, .1, 1), (3, 0, 2), (4, 1, .1), (5, 63, 125)])
+@pytest.mark.parametrize('case, height, weight', [(1, 0, 150), (2, .1, 1), (3, 2, 0), (4, 1, .1), (5, 63, 125)])
 def test_bmiCalculator(case, height, weight):
     # ON lower height
     if case == 1:
